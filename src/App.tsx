@@ -5,6 +5,7 @@ import Contact from './Components/Contact/Contact';
 import Projects from './Components/Projects/Projects';
 import Cv from './Components/Cv/Cv';
 import Navbar from './Components/Navbar/Navbar';
+import IndividualProjects from './Components/IndividualProject/IndividualProject';
 import './styles.scss';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/projects" element={<Projects />}/>
           <Route path="/cv" element={<Cv />}/>
           <Route path="/contact" element={<Contact />}/>
+          <Route path="/projects/:projectId" element={<IndividualProjects />} />
         </Routes>
       </BrowserRouter>
     </div>
