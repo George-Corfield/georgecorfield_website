@@ -15,7 +15,7 @@ function Navbar() {
             <NavLink className="link" to="/projects"><h2>Projects</h2></NavLink>
           </div>
           <div className='tab'>
-            <NavLink className="link" to="/cv"><h2>CV</h2></NavLink>
+            <a className="link" href='/CV.pdf' target="_blank"><h2>CV</h2></a>
           </div>
           {/* <div className='tab'>
             <NavLink className="link" to="/contact"><h2>Contact</h2></NavLink>

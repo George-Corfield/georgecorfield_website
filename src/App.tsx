@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Contact from './Components/Contact/Contact';
 import Projects from './Components/Projects/Projects';
-import Cv from './Components/Cv/Cv';
 import Navbar from './Components/Navbar/Navbar';
 import IndividualProjects from './Components/IndividualProject/IndividualProject';
 import './styles.scss';
@@ -16,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />}/>
-          <Route path="/cv" element={<Cv />}/>
           {/* <Route path="/contact" element={<Contact />}/> */}
           <Route path="/projects/:projectId" element={<IndividualProjects />} />
         </Routes>

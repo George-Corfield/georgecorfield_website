@@ -103,35 +103,48 @@ function Home() {
             <div className="content">
                 <span className="subHeading">About Me.</span>
                 <span className="text">
-                    Born and raised in a small town called Tring, I have since moved to Bristol to study computer science
+                    I come from a small village outside of London called Kensworth, I have since moved to Bristol to study Computer Science
                     at the University of Bristol. I have various experiences in software engineering, my most recent being at Tesco
                     where I worked in their promotional department. Outside of this is, I have completed numerous projects which showcase my 
                     knowledge in Machine Learning, Ai, and working on distributed systems. I am looking forward to using these skills in 
                     a corporate setting.
                 </span>
-
-                <div className="tabs">
-                    <p
-                        className={`tab-button ${activeTab === 'skills' ? "active" : ""}`}
-                        onClick={() => setActiveTab("skills")}
-                    >
-                        Skills
-                    </p>
-                    <p 
-                        className={`tab-button ${activeTab === "education" ? "active" : ""}`} 
-                        onClick={() => setActiveTab("education")}
-                    >
-                        Education
-                    </p>
-                    <p 
-                        className={`tab-button ${activeTab === "awards" ? "active" : ""}`} 
-                        onClick={() => setActiveTab("awards")}
-                    >
-                        Awards
-                    </p>
-                </div>
-                <div className="tab-content">
-                    {renderTab()}
+                <div className="tabs-and-contact">
+                    <div>
+                        <div className="tabs">
+                            <p
+                                className={`tab-button ${activeTab === 'skills' ? "active" : ""}`}
+                                onClick={() => setActiveTab("skills")}
+                            >
+                                Skills
+                            </p>
+                            <p
+                                className={`tab-button ${activeTab === "education" ? "active" : ""}`}
+                                onClick={() => setActiveTab("education")}
+                            >
+                                Education
+                            </p>
+                            <p
+                                className={`tab-button ${activeTab === "awards" ? "active" : ""}`}
+                                onClick={() => setActiveTab("awards")}
+                            >
+                                Awards
+                            </p>
+                        </div>
+                        <div className="tab-content">
+                            {renderTab()}
+                        </div>
+                    </div>
+                    <div>
+                        <div className="headings">
+                            <span className="subHeading">Contact Me.</span>
+                        </div>
+                        <div className="external-links">
+                            <a href="mailto:gacorfield50@gmail.com"><img src="/email.svg" />Email</a>
+                            <a href="https://github.com/George-Corfield" target="_blank"><img src="/github-mark.svg" />Github</a>
+                            <a href="https://www.linkedin.com/in/george-corfield-5a39681ba/" target="_blank"><img src="/linkedIn.svg" />LinkedIn</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

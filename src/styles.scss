@@ -102,6 +102,25 @@ $header-height : 10vh;
 
 .home {
   padding: 5vw;
+
+  .tabs-and-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    width: 100%;
+    row-gap: 30px;
+    flex-wrap: wrap;
+
+    .headings {
+      padding-left: 0;
+    }
+
+    > div {
+      flex: 1 1;
+      padding: 20px;
+    }
+  }
 }
 
 .page {
@@ -146,9 +165,10 @@ $header-height : 10vh;
     justify-content: space-evenly;
     column-gap: 40px;
 
+    
+
     .tab-button {
       display: flex;
-      flex: 1;
       cursor: pointer;
       position: relative;
       padding-bottom: 8px;
@@ -189,6 +209,7 @@ $header-height : 10vh;
 
     .headings {
       padding-bottom: 0px;
+      padding-left: 20px  !important;
 
       h4, h6 {
         margin: 0px;
@@ -206,6 +227,8 @@ $header-height : 10vh;
   }
 
 }
+
+
 
 .project-grid {
   grid-gap: 1rem;
@@ -333,32 +356,38 @@ $header-height : 10vh;
     p {
       font-size: xx-large;
     }
+  }
+}
 
-    a {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      font-size: x-large;
-      padding: 10px 20px;
-      border: 2px solid #333;
-      border-radius: 12px;
-      transition: all 0.3s ease;
+.external-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 
-      &:hover {
-        color: #007bff;
-        border-color: #007bff;
-        transform: translateY(-2px);
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-      }
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    transition: all 0.3s ease;
 
-      img {
-        width: 35px;
-        height: 35px;
-      }
-
+    &:hover {
+      color: #007bff;
+      border-color: #007bff;
+      transform: translateY(-2px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     }
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
   }
 }

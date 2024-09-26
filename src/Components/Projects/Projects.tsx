@@ -6,7 +6,7 @@ function Projects() {
     return (
         <div className='projects page'>
             <div className='headings'>
-                <h2>Projects</h2>
+                <span className='topHeading'>Projects</span>
             </div>
             <div className='content'>
                 <div className='project-grid'>

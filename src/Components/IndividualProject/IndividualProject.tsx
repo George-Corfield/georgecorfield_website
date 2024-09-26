@@ -18,7 +18,7 @@ const IndividualProjects: React.FC = () => {
                             Back
                         </button>
                     </Link>
-                    <h2>{projects[projectId].title}</h2>
+                    <span className="topHeading">{projects[projectId].title}</span>
                 </div>
                 <div className="project-descriptions">
                     <div className="project-image">
@@ -26,7 +26,7 @@ const IndividualProjects: React.FC = () => {
                     </div>
                     <div className="project-info">
                         <p>{projects[projectId].description}</p>
-                        <div className="project-links">
+                        <div className="external-links">
                             {projects[projectId].GitLink && <a href={projects[projectId].GitLink} target="_blank" rel="noopener noreferrer">
                                 <img src="/github-mark.svg" />
                                 GitHub
