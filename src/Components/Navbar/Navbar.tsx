@@ -17,9 +17,9 @@ function Navbar() {
           <div className='tab'>
             <NavLink className="link" to="/cv"><h2>CV</h2></NavLink>
           </div>
-          <div className='tab'>
+          {/* <div className='tab'>
             <NavLink className="link" to="/contact"><h2>Contact</h2></NavLink>
-          </div>
+          </div> */}
         </div> 
       </div>
     );
